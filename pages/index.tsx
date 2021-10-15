@@ -8,10 +8,27 @@ const Home: NextPage = () => {
       <Head>
         <title>Sunny Side Agency</title>
         <meta name="description" content="Sunny Side Agency" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-32x32" />
       </Head>
 
-      <main></main>
+      <main>
+        <div className="flex flex-col h-screen">
+          <Image
+            src="/mobile/image-header.jpg"
+            alt="header image"
+            width={100}
+            height={100}
+            layout="responsive"
+          />
+          <Image
+            src="/mobile/image-transform.jpg"
+            alt="header image"
+            width={100}
+            height={100}
+            layout="responsive"
+          />
+        </div>
+      </main>
 
       <footer />
     </div>
