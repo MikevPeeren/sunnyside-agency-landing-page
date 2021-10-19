@@ -3,7 +3,10 @@ import Image from "next/image";
 const Testimonials = () => {
   return (
     <div className="flex flex-col align-center justify-center text-center">
-      <section className="my-6">
+      <h1 className="my-6 tracking-widest text-gray-blue font-semibold">
+        CLIENT TESTIMONIALS
+      </h1>
+      <section className="m-6">
         <Image
           className="rounded-full"
           src="/image-emily.jpg"
@@ -21,7 +24,7 @@ const Testimonials = () => {
           <span className="text-">Marketing Director</span>
         </footer>
       </section>
-      <section className="my-6">
+      <section className="m-6">
         <Image
           className="rounded-full"
           src="/image-thomas.jpg"
@@ -39,7 +42,7 @@ const Testimonials = () => {
           <span className="text-">Chief Operating Officer</span>
         </footer>
       </section>
-      <section className="my-6">
+      <section className="m-6">
         <Image
           className="rounded-full my-4"
           src="/image-jennie.jpg"

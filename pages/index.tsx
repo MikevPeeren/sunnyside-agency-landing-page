@@ -62,6 +62,46 @@ const Home: NextPage = () => {
             layout="responsive"
           />
           <Testimonials />
+          <div className="flex flex-row w-full">
+            <div className="w-2/4">
+              <Image
+                src="/mobile/image-gallery-milkbottles.jpg"
+                alt="header image"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
+            </div>
+            <div className="w-2/4">
+              <Image
+                src="/mobile/image-gallery-orange.jpg"
+                alt="header image"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
+            </div>
+          </div>
+          <div className="flex flex-row w-full">
+            <div className="w-2/4">
+              <Image
+                src="/mobile/image-gallery-cone.jpg"
+                alt="header image"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
+            </div>
+            <div className="w-2/4">
+              <Image
+                src="/mobile/image-gallery-sugar-cubes.jpg"
+                alt="header image"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
+            </div>
+          </div>
         </div>
       </main>
 
