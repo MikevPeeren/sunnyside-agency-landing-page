@@ -15,6 +15,10 @@ module.exports = {
         "dark-gray-blue": "hsl(232, 10%, 55%)",
         "gray-blue": "hsl(210, 4%, 67%)",
       },
+      fontFamily: {
+        barlow: "Barlow",
+        fraunces: "Fraunces",
+      },
     },
   },
   variants: {
