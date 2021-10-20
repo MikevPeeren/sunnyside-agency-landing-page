@@ -16,8 +16,8 @@ module.exports = {
         "gray-blue": "hsl(210, 4%, 67%)",
       },
       fontFamily: {
-        barlow: "Barlow",
-        fraunces: "Fraunces",
+        barlow: ["Barlow", "sans-serif"],
+        fraunces: ["Fraunces", "serif"],
       },
     },
   },
