@@ -38,6 +38,7 @@ const Home: NextPage = () => {
             header="Transform your brand"
             content="We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
             footer="Learn More"
+            footerColor="yellow"
           />
           <div className="w-full">
             <Image
@@ -52,6 +53,7 @@ const Home: NextPage = () => {
             header="Stand out to the right audience"
             content="Using a collaborative formula of designers, researchers, photographers, videographers and copywriters, we'll build and extend your brand in digital places."
             footer="Learn More"
+            footerColor="soft-red"
           />
           <div className="w-full">
             <Image
