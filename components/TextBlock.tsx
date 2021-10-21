@@ -8,12 +8,15 @@ interface ITextBlock {
 }
 
 const TextBlock = ({ header, content, footer, footerColor }: ITextBlock) => {
+  const afterBG = `after:bg-${footerColor}`;
+  const afterBorderBG = `after:border-bg-${footerColor}`;
+
   return (
     <section className="flex flex-col align-center justify-center text-center my-8">
       <h1 className="p-4 font-black font-fraunces text-3xl">{header}</h1>
       <p className="p-4 font-fraunces text-very-dark-gray-blue">{content}</p>
       <span
-        className={`${styles.footer} p-4 uppercase font-black font-fraunces after:bg-${footerColor} after:border-bg-${footerColor} after:bg-opacity-30`}
+        className={`${styles.footer} p-4 uppercase font-black font-fraunces ${afterBG} ${afterBorderBG} after:bg-opacity-30`}
       >
         {footer}
       </span>
