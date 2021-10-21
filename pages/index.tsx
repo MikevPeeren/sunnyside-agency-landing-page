@@ -64,14 +64,27 @@ const Home: NextPage = () => {
               layout="responsive"
             />
           </div>
-          <div className="w-full">
-            <Image
-              src="/mobile/image-photography.jpg"
-              alt="header image"
-              width={100}
-              height={150}
-              layout="responsive"
-            />
+          <div className="w-full relative text-center h-[675px]">
+            <div className="absolute w-full">
+              <Image
+                src="/mobile/image-photography.jpg"
+                alt="header image"
+                width={100}
+                height={175}
+                layout="responsive"
+              />
+            </div>
+            <div className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 -translate-y-1/2">
+              <div className="flex flex-col justify-between">
+                <h1 className="font-fraunces font-black text-4xl text-dark-blue">
+                  Photography
+                </h1>
+                <p className="m-6 text-sm font-barlow text-dark-blue">
+                  Increase your credibility by getting the most stunning,
+                  high-quality photos that improve your business image.
+                </p>
+              </div>
+            </div>
           </div>
           <Testimonials />
           <div className="flex flex-row w-full">
@@ -115,9 +128,10 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="bg-dark-moderate-cyan h-72 flex flex-col align-center justify-center text-center">
-            <h1 className="lowercase font-barlow text-2xl">Sunnyside</h1>
-            <h1 className="lowercase font-fraunces text-2xl">Sunnyside</h1>
-            <div className="flex flex-row m-6 my-8 justify-between align-center">
+            <h1 className="lowercase font-barlow font-black text-4xl text-dark-desaturated-cyan">
+              Sunnyside
+            </h1>
+            <div className="flex flex-row m-6 my-8 justify-between align-center text-dark-desaturated-cyan">
               <span>About</span>
               <span>Services</span>
               <span>Projects</span>
