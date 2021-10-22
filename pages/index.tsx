@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import TextBlock from "../components/TextBlock";
 import Testimonials from "../components/Testimonials";
+import ImageText from "../components/ImageText";
 
 const Home: NextPage = () => {
   return (
@@ -51,13 +52,19 @@ const Home: NextPage = () => {
             footer="Learn More"
             footerColor="soft-red"
           />
-          <div className="w-full">
-            <Image
-              src="/mobile/image-graphic-design.jpg"
-              alt="header image"
-              width={100}
-              height={150}
-              layout="responsive"
+          <div className="w-full relative h-[650px]">
+            <div className="absolute w-full">
+              <div className="w-full h-[650px] relative">
+                <Image
+                  src="/mobile/image-graphic-design.jpg"
+                  alt="header image"
+                  layout="fill"
+                />
+              </div>
+            </div>
+            <ImageText
+              title="Graphic Design"
+              content="Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention"
             />
           </div>
           <div className="w-full relative h-[650px]">
@@ -70,17 +77,10 @@ const Home: NextPage = () => {
                 />
               </div>
             </div>
-            <div className="absolute left-1/2 bottom-10 w-full -translate-x-1/2 text-center">
-              <div className="flex flex-col justify-between">
-                <h1 className="font-fraunces font-black text-4xl text-dark-blue">
-                  Photography
-                </h1>
-                <p className="m-6 text-sm font-barlow text-dark-blue">
-                  Increase your credibility by getting the most stunning,
-                  high-quality photos that improve your business image.
-                </p>
-              </div>
-            </div>
+            <ImageText
+              title="Photography"
+              content="Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
+            />
           </div>
           <Testimonials />
           <div className="flex flex-row w-full">
