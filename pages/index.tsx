@@ -112,6 +112,7 @@ const Home: NextPage = () => {
               <ImageText
                 title="Graphic Design"
                 content="Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention"
+                color="text-dark-desaturated-cyan"
               />
             </div>
             <div className="w-full relative h-[650px] md:h-[400px]">
@@ -135,6 +136,7 @@ const Home: NextPage = () => {
               <ImageText
                 title="Photography"
                 content="Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
+                color="text-dark-blue"
               />
             </div>
           </div>
