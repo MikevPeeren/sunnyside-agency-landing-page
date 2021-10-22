@@ -5,6 +5,7 @@ import Image from "next/image";
 import TextBlock from "../components/TextBlock";
 import Testimonials from "../components/Testimonials";
 import ImageText from "../components/ImageText";
+import NavBar from "../components/NavBar";
 
 const Home: NextPage = () => {
   return (
@@ -17,29 +18,32 @@ const Home: NextPage = () => {
 
       <main>
         <div className="flex flex-col h-vh h-vw overflow-hidden">
-          <div className="w-full relative h-[500px]">
-            <div className="absolute w-full">
-              <div className="w-full h-[500px] relative">
-                <Image
-                  src="/mobile/image-header.jpg"
-                  alt="header image"
-                  layout="fill"
-                />
-              </div>
-            </div>
-            <div className="absolute left-1/2 top-28 w-full -translate-x-1/2 text-center">
-              <div className="flex flex-col justify-between">
-                <h1 className="font-fraunces font-black text-4xl text-white uppercase tracking-wider">
-                  We are creatives
-                </h1>
-                <div className="w-full my-8">
+          <div className="relative">
+            <NavBar />
+            <div className="w-full relative h-[500px]">
+              <div className="absolute w-full">
+                <div className="w-full h-[500px] relative">
                   <Image
-                    src="/icon-arrow-down.svg"
-                    alt="facebook"
-                    width={36}
-                    height={114}
-                    layout="fixed"
+                    src="/mobile/image-header.jpg"
+                    alt="header image"
+                    layout="fill"
                   />
+                </div>
+              </div>
+              <div className="absolute left-1/2 top-28 w-full -translate-x-1/2 text-center">
+                <div className="flex flex-col justify-between">
+                  <h1 className="font-fraunces font-black text-4xl text-white uppercase tracking-wider">
+                    We are creatives
+                  </h1>
+                  <div className="w-full my-8">
+                    <Image
+                      src="/icon-arrow-down.svg"
+                      alt="facebook"
+                      width={36}
+                      height={114}
+                      layout="fixed"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
