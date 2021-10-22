@@ -7,7 +7,11 @@ import Testimonials from "../components/Testimonials";
 import ImageText from "../components/ImageText";
 import NavBar from "../components/NavBar";
 
+import useMediaQuery from "../utils/hooks/useMediaQuery";
+
 const Home: NextPage = () => {
+  const isDesktop = useMediaQuery("(min-width: 960px)");
+
   return (
     <div>
       <Head>
@@ -20,11 +24,15 @@ const Home: NextPage = () => {
         <div className="flex flex-col h-vh h-vw overflow-hidden">
           <div className="relative">
             <NavBar />
-            <div className="w-full relative h-[500px] md:h-[800px]">
+            <div className="w-full relative h-[500px] md:h-[700px]">
               <div className="absolute w-full">
-                <div className="w-full h-[500px] md:h-[800px] relative">
+                <div className="w-full h-[500px] md:h-[700px] relative">
                   <Image
-                    src="/mobile/image-header.jpg"
+                    src={
+                      isDesktop
+                        ? "/desktop/image-header.jpg"
+                        : "/mobile/image-header.jpg"
+                    }
                     alt="header image"
                     layout="fill"
                   />
@@ -51,7 +59,11 @@ const Home: NextPage = () => {
           <div className="md:flex md:flex-row">
             <div className="w-full md:w-2/4 h-[300px] md:h-[400px] relative md:order-2">
               <Image
-                src="/mobile/image-transform.jpg"
+                src={
+                  isDesktop
+                    ? "/desktop/image-transform.jpg"
+                    : "/mobile/image-transform.jpg"
+                }
                 alt="header image"
                 layout="fill"
               />
@@ -66,7 +78,11 @@ const Home: NextPage = () => {
           <div className="md:flex md:flex-row">
             <div className="w-full md:w-2/4 h-[300px] md:h-[400px] relative md:order-none">
               <Image
-                src="/mobile/image-stand-out.jpg"
+                src={
+                  isDesktop
+                    ? "/desktop/image-stand-out.jpg"
+                    : "/mobile/image-stand-out.jpg"
+                }
                 alt="header image"
                 layout="fill"
               />
@@ -83,7 +99,11 @@ const Home: NextPage = () => {
               <div className="absolute w-full">
                 <div className="w-full h-[650px] md:h-[400px] relative">
                   <Image
-                    src="/mobile/image-graphic-design.jpg"
+                    src={
+                      isDesktop
+                        ? "/desktop/image-graphic-design.jpg"
+                        : "/mobile/image-graphic-design.jpg"
+                    }
                     alt="header image"
                     layout="fill"
                   />
@@ -97,11 +117,19 @@ const Home: NextPage = () => {
             <div className="w-full relative h-[650px] md:h-[400px]">
               <div className="absolute w-full">
                 <div className="w-full h-[650px] md:h-[400px] relative">
-                  <Image
-                    src="/mobile/image-photography.jpg"
-                    alt="header image"
-                    layout="fill"
-                  />
+                  {isDesktop ? (
+                    <Image
+                      src="/desktop/image-photography.jpg"
+                      alt="header image"
+                      layout="fill"
+                    />
+                  ) : (
+                    <Image
+                      src="/mobile/image-photography.jpg"
+                      alt="header image"
+                      layout="fill"
+                    />
+                  )}
                 </div>
               </div>
               <ImageText
@@ -115,7 +143,11 @@ const Home: NextPage = () => {
             <div className="flex flex-row w-full">
               <div className="w-2/4">
                 <Image
-                  src="/mobile/image-gallery-milkbottles.jpg"
+                  src={
+                    isDesktop
+                      ? "/desktop/image-gallery-milkbottles.jpg"
+                      : "/mobile/image-gallery-milkbottles.jpg"
+                  }
                   alt="header image"
                   width={100}
                   height={100}
@@ -124,7 +156,11 @@ const Home: NextPage = () => {
               </div>
               <div className="w-2/4">
                 <Image
-                  src="/mobile/image-gallery-orange.jpg"
+                  src={
+                    isDesktop
+                      ? "/desktop/image-gallery-orange.jpg"
+                      : "/mobile/image-gallery-orange.jpg"
+                  }
                   alt="header image"
                   width={100}
                   height={100}
@@ -135,7 +171,11 @@ const Home: NextPage = () => {
             <div className="flex flex-row w-full">
               <div className="w-2/4">
                 <Image
-                  src="/mobile/image-gallery-cone.jpg"
+                  src={
+                    isDesktop
+                      ? "/desktop/image-gallery-cone.jpg"
+                      : "/mobile/image-gallery-cone.jpg"
+                  }
                   alt="header image"
                   width={100}
                   height={100}
@@ -144,7 +184,11 @@ const Home: NextPage = () => {
               </div>
               <div className="w-2/4">
                 <Image
-                  src="/mobile/image-gallery-sugar-cubes.jpg"
+                  src={
+                    isDesktop
+                      ? "/desktop/image-gallery-sugar-cubes.jpg"
+                      : "/mobile/image-gallery-sugar-cubes.jpg"
+                  }
                   alt="header image"
                   width={100}
                   height={100}
