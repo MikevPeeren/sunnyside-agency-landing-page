@@ -20,9 +20,9 @@ const Home: NextPage = () => {
         <div className="flex flex-col h-vh h-vw overflow-hidden">
           <div className="relative">
             <NavBar />
-            <div className="w-full relative h-[500px]">
+            <div className="w-full relative h-[500px] md:h-[800px]">
               <div className="absolute w-full">
-                <div className="w-full h-[500px] relative">
+                <div className="w-full h-[500px] md:h-[800px] relative">
                   <Image
                     src="/mobile/image-header.jpg"
                     alt="header image"
@@ -48,108 +48,116 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-[300px] relative">
-            <Image
-              src="/mobile/image-transform.jpg"
-              alt="header image"
-              layout="fill"
-            />
-          </div>
-          <TextBlock
-            header="Transform your brand"
-            content="We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
-            footer="Learn More"
-            footerColor="yellow"
-          />
-          <div className="w-full h-[300px] relative">
-            <Image
-              src="/mobile/image-stand-out.jpg"
-              alt="header image"
-              layout="fill"
-            />
-          </div>
-          <TextBlock
-            header="Stand out to the right audience"
-            content="Using a collaborative formula of designers, researchers, photographers, videographers and copywriters, we'll build and extend your brand in digital places."
-            footer="Learn More"
-            footerColor="soft-red"
-          />
-          <div className="w-full relative h-[650px]">
-            <div className="absolute w-full">
-              <div className="w-full h-[650px] relative">
-                <Image
-                  src="/mobile/image-graphic-design.jpg"
-                  alt="header image"
-                  layout="fill"
-                />
-              </div>
+          <div className="md:flex md:flex-row">
+            <div className="w-full md:w-2/4 h-[300px] md:h-[400px] relative md:order-2">
+              <Image
+                src="/mobile/image-transform.jpg"
+                alt="header image"
+                layout="fill"
+              />
             </div>
-            <ImageText
-              title="Graphic Design"
-              content="Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention"
+            <TextBlock
+              header="Transform your brand"
+              content="We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
+              footer="Learn More"
+              footerColor="yellow"
             />
           </div>
-          <div className="w-full relative h-[650px]">
-            <div className="absolute w-full">
-              <div className="w-full h-[650px] relative">
-                <Image
-                  src="/mobile/image-photography.jpg"
-                  alt="header image"
-                  layout="fill"
-                />
-              </div>
+          <div className="md:flex md:flex-row">
+            <div className="w-full md:w-2/4 h-[300px] md:h-[400px] relative md:order-none">
+              <Image
+                src="/mobile/image-stand-out.jpg"
+                alt="header image"
+                layout="fill"
+              />
             </div>
-            <ImageText
-              title="Photography"
-              content="Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
+            <TextBlock
+              header="Stand out to the right audience"
+              content="Using a collaborative formula of designers, researchers, photographers, videographers and copywriters, we'll build and extend your brand in digital places."
+              footer="Learn More"
+              footerColor="soft-red"
             />
+          </div>
+          <div className="md:flex md:flex-row">
+            <div className="w-full relative h-[650px] md:h-[400px]">
+              <div className="absolute w-full">
+                <div className="w-full h-[650px] md:h-[400px] relative">
+                  <Image
+                    src="/mobile/image-graphic-design.jpg"
+                    alt="header image"
+                    layout="fill"
+                  />
+                </div>
+              </div>
+              <ImageText
+                title="Graphic Design"
+                content="Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention"
+              />
+            </div>
+            <div className="w-full relative h-[650px] md:h-[400px]">
+              <div className="absolute w-full">
+                <div className="w-full h-[650px] md:h-[400px] relative">
+                  <Image
+                    src="/mobile/image-photography.jpg"
+                    alt="header image"
+                    layout="fill"
+                  />
+                </div>
+              </div>
+              <ImageText
+                title="Photography"
+                content="Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
+              />
+            </div>
           </div>
           <Testimonials />
-          <div className="flex flex-row w-full">
-            <div className="w-2/4">
-              <Image
-                src="/mobile/image-gallery-milkbottles.jpg"
-                alt="header image"
-                width={100}
-                height={100}
-                layout="responsive"
-              />
+          <div className="md:flex md:flex-row md:w-full">
+            <div className="flex flex-row w-full">
+              <div className="w-2/4">
+                <Image
+                  src="/mobile/image-gallery-milkbottles.jpg"
+                  alt="header image"
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                />
+              </div>
+              <div className="w-2/4">
+                <Image
+                  src="/mobile/image-gallery-orange.jpg"
+                  alt="header image"
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                />
+              </div>
             </div>
-            <div className="w-2/4">
-              <Image
-                src="/mobile/image-gallery-orange.jpg"
-                alt="header image"
-                width={100}
-                height={100}
-                layout="responsive"
-              />
+            <div className="flex flex-row w-full">
+              <div className="w-2/4">
+                <Image
+                  src="/mobile/image-gallery-cone.jpg"
+                  alt="header image"
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                />
+              </div>
+              <div className="w-2/4">
+                <Image
+                  src="/mobile/image-gallery-sugar-cubes.jpg"
+                  alt="header image"
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                />
+              </div>
             </div>
           </div>
-          <div className="flex flex-row w-full">
-            <div className="w-2/4">
-              <Image
-                src="/mobile/image-gallery-cone.jpg"
-                alt="header image"
-                width={100}
-                height={100}
-                layout="responsive"
-              />
-            </div>
-            <div className="w-2/4">
-              <Image
-                src="/mobile/image-gallery-sugar-cubes.jpg"
-                alt="header image"
-                width={100}
-                height={100}
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="bg-dark-moderate-cyan h-72 flex flex-col align-center justify-center text-center">
+          <div className="bg-dark-moderate-cyan h-72 flex flex-col justify-center text-center">
             <h1 className="lowercase font-barlow font-black text-4xl text-dark-desaturated-cyan">
               Sunnyside
             </h1>
-            <div className="flex flex-row m-6 my-8 justify-center align-center text-dark-desaturated-cyan">
+            <div className="flex flex-row m-6 my-8 justify-center text-dark-desaturated-cyan">
               <span className="mx-4 cursor-pointer hover:text-white transition duration-700 ease-in-out">
                 About
               </span>
@@ -160,7 +168,7 @@ const Home: NextPage = () => {
                 Projects
               </span>
             </div>
-            <div className="flex flex-row mx-16 my-6 justify-center align-center">
+            <div className="flex flex-row mx-16 my-6 justify-center">
               <div className="mx-2">
                 <svg
                   className="text-[#2C7566] font-black fill-current hover:text-white cursor-pointer transition duration-700 ease-in-out"
