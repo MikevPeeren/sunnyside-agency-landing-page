@@ -118,19 +118,15 @@ const Home: NextPage = () => {
             <div className="w-full relative h-[650px] md:h-[400px]">
               <div className="absolute w-full">
                 <div className="w-full h-[650px] md:h-[400px] relative">
-                  {isDesktop ? (
-                    <Image
-                      src="/desktop/image-photography.jpg"
-                      alt="header image"
-                      layout="fill"
-                    />
-                  ) : (
-                    <Image
-                      src="/mobile/image-photography.jpg"
-                      alt="header image"
-                      layout="fill"
-                    />
-                  )}
+                  <Image
+                    src={
+                      isDesktop
+                        ? "/desktop/image-photography.jpg"
+                        : "/mobile/image-photography.jpg"
+                    }
+                    alt="header image"
+                    layout="fill"
+                  />
                 </div>
               </div>
               <ImageText
