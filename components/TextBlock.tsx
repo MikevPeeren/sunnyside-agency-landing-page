@@ -9,7 +9,7 @@ interface ITextBlock {
 
 const TextBlock = ({ header, content, footer, footerColor }: ITextBlock) => {
   const yellowClassNames = `${styles.footer} p-4 uppercase font-black font-fraunces after:bg-yellow after:border-bg-yellow after:bg-opacity-30 cursor-pointer`;
-  const redClassNames = `${styles.footer} p-4 uppercase font-black font-fraunces after:bg-soft-red after:border-bg-soft-red after:bg-opacity-30 cursor-pointer`;
+  const redClassNames = `${styles.footer} p-4 uppercase font-black font-fraunces after:bg-soft-red after:border-bg-soft-red  after:bg-opacity-30 cursor-pointer`;
   return (
     <section className="flex flex-col align-center justify-center text-center my-8">
       <h1 className="p-4 font-black font-fraunces text-3xl">{header}</h1>

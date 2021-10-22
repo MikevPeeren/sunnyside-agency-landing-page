@@ -150,20 +150,20 @@ const Home: NextPage = () => {
               Sunnyside
             </h1>
             <div className="flex flex-row m-6 my-8 justify-center align-center text-dark-desaturated-cyan">
-              <span className="mx-4 cursor-pointer hover:text-white">
+              <span className="mx-4 cursor-pointer hover:text-white transition duration-700 ease-in-out">
                 About
               </span>
-              <span className="mx-4 cursor-pointer hover:text-white">
+              <span className="mx-4 cursor-pointer hover:text-white transition duration-700 ease-in-out">
                 Services
               </span>
-              <span className="mx-4 cursor-pointer hover:text-white">
+              <span className="mx-4 cursor-pointer hover:text-white transition duration-700 ease-in-out">
                 Projects
               </span>
             </div>
             <div className="flex flex-row mx-16 my-6 justify-center align-center">
               <div className="mx-2">
                 <svg
-                  className="text-[#2C7566] font-black fill-current hover:text-white cursor-pointer"
+                  className="text-[#2C7566] font-black fill-current hover:text-white cursor-pointer transition duration-700 ease-in-out"
                   width={20}
                   height={20}
                   xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +173,7 @@ const Home: NextPage = () => {
               </div>
               <div className="mx-2">
                 <svg
-                  className="text-[#2C7566] fill-current hover:text-white cursor-pointer"
+                  className="text-[#2C7566] fill-current hover:text-white cursor-pointer transition duration-700 ease-in-out"
                   width={20}
                   height={20}
                   xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +183,7 @@ const Home: NextPage = () => {
               </div>
               <div className="mx-2">
                 <svg
-                  className="text-[#2C7566] fill-current hover:text-white cursor-pointer"
+                  className="text-[#2C7566] fill-current hover:text-white cursor-pointer transition duration-700 ease-in-out"
                   width={20}
                   height={20}
                   xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +193,7 @@ const Home: NextPage = () => {
               </div>
               <div className="mx-2">
                 <svg
-                  className="text-[#2C7566] fill-current hover:text-white cursor-pointer"
+                  className="text-[#2C7566] fill-current hover:text-white cursor-pointer transition duration-700 ease-in-out"
                   width={20}
                   height={20}
                   xmlns="http://www.w3.org/2000/svg"
