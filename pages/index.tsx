@@ -25,13 +25,11 @@ const Home: NextPage = () => {
               layout="responsive"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full h-[300px] relative">
             <Image
               src="/mobile/image-transform.jpg"
               alt="header image"
-              width={100}
-              height={100}
-              layout="responsive"
+              layout="fill"
             />
           </div>
           <TextBlock
@@ -40,13 +38,11 @@ const Home: NextPage = () => {
             footer="Learn More"
             footerColor="yellow"
           />
-          <div className="w-full">
+          <div className="w-full h-[300px] relative">
             <Image
               src="/mobile/image-stand-out.jpg"
               alt="header image"
-              width={100}
-              height={100}
-              layout="responsive"
+              layout="fill"
             />
           </div>
           <TextBlock
@@ -64,17 +60,17 @@ const Home: NextPage = () => {
               layout="responsive"
             />
           </div>
-          <div className="w-full relative text-center h-[675px]">
+          <div className="w-full relative h-[650px]">
             <div className="absolute w-full">
-              <Image
-                src="/mobile/image-photography.jpg"
-                alt="header image"
-                width={100}
-                height={175}
-                layout="responsive"
-              />
+              <div className="w-full h-[650px] relative">
+                <Image
+                  src="/mobile/image-photography.jpg"
+                  alt="header image"
+                  layout="fill"
+                />
+              </div>
             </div>
-            <div className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute left-1/2 bottom-10 w-full -translate-x-1/2 text-center">
               <div className="flex flex-col justify-between">
                 <h1 className="font-fraunces font-black text-4xl text-dark-blue">
                   Photography
