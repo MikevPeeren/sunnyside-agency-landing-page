@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className="flex flex-col h-vh">
+        <div className="flex flex-col h-vh h-vw overflow-hidden">
           <div className="w-full">
             <Image
               src="/mobile/image-header.jpg"
@@ -127,36 +127,44 @@ const Home: NextPage = () => {
             <h1 className="lowercase font-barlow font-black text-4xl text-dark-desaturated-cyan">
               Sunnyside
             </h1>
-            <div className="flex flex-row m-6 my-8 justify-between align-center text-dark-desaturated-cyan">
-              <span>About</span>
-              <span>Services</span>
-              <span>Projects</span>
+            <div className="flex flex-row m-6 my-8 justify-center align-center text-dark-desaturated-cyan">
+              <span className="mx-4">About</span>
+              <span className="mx-4">Services</span>
+              <span className="mx-4">Projects</span>
             </div>
-            <div className="flex flex-row mx-16 my-6 justify-between align-center">
-              <Image
-                src="/icon-facebook.svg"
-                alt="facebook"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/icon-instagram.svg"
-                alt="instagram"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/icon-twitter.svg"
-                alt="twitter"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/icon-pinterest.svg"
-                alt="pinterest"
-                height={20}
-                width={20}
-              />
+            <div className="flex flex-row mx-16 my-6 justify-center align-center">
+              <div className="mx-1">
+                <Image
+                  src="/icon-facebook.svg"
+                  alt="facebook"
+                  height={20}
+                  width={20}
+                />
+              </div>
+              <div className="mx-1">
+                <Image
+                  src="/icon-instagram.svg"
+                  alt="instagram"
+                  height={20}
+                  width={20}
+                />
+              </div>
+              <div className="mx-1">
+                <Image
+                  src="/icon-twitter.svg"
+                  alt="twitter"
+                  height={20}
+                  width={20}
+                />
+              </div>
+              <div className="mx-1">
+                <Image
+                  src="/icon-pinterest.svg"
+                  alt="pinterest"
+                  height={20}
+                  width={20}
+                />
+              </div>
             </div>
           </div>
         </div>
