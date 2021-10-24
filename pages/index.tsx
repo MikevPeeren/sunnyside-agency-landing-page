@@ -46,7 +46,7 @@ const Home: NextPage = () => {
                   <div className="w-full my-8">
                     <Image
                       src="/icon-arrow-down.svg"
-                      alt="facebook"
+                      alt="arrow-down"
                       width={36}
                       height={114}
                       layout="fixed"
@@ -57,15 +57,16 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="md:flex md:flex-row">
-            <div className="w-full md:w-2/4 h-[300px] md:h-[400px] relative md:order-2">
+            <div className="w-full md:w-2/4 h-[300px] md:min-h-[650px] relative md:order-2">
               <Image
                 src={
                   isDesktop
                     ? "/desktop/image-transform.jpg"
                     : "/mobile/image-transform.jpg"
                 }
-                alt="header image"
+                alt="egg image"
                 layout="fill"
+                objectFit="cover"
               />
             </div>
             <TextBlock
@@ -76,14 +77,14 @@ const Home: NextPage = () => {
             />
           </div>
           <div className="md:flex md:flex-row">
-            <div className="w-full md:w-2/4 h-[300px] md:h-[400px] relative md:order-none">
+            <div className="w-full md:w-2/4 h-[300px] md:min-h-[650px] relative md:order-none">
               <Image
                 src={
                   isDesktop
                     ? "/desktop/image-stand-out.jpg"
                     : "/mobile/image-stand-out.jpg"
                 }
-                alt="header image"
+                alt="stand out image"
                 layout="fill"
               />
             </div>
@@ -95,17 +96,18 @@ const Home: NextPage = () => {
             />
           </div>
           <div className="md:flex md:flex-row">
-            <div className="w-full relative h-[650px] md:h-[400px]">
+            <div className="w-full relative h-[650px] md:h-[650px]">
               <div className="absolute w-full">
-                <div className="w-full h-[650px] md:h-[400px] relative">
+                <div className="w-full h-[650px] md:min-h-[650px] relative">
                   <Image
                     src={
                       isDesktop
                         ? "/desktop/image-graphic-design.jpg"
                         : "/mobile/image-graphic-design.jpg"
                     }
-                    alt="header image"
+                    alt="graphic design image"
                     layout="fill"
+                    objectFit="cover"
                   />
                 </div>
               </div>
@@ -115,17 +117,18 @@ const Home: NextPage = () => {
                 color="text-dark-desaturated-cyan"
               />
             </div>
-            <div className="w-full relative h-[650px] md:h-[400px]">
+            <div className="w-full relative h-[650px] md:min-h-[650px]">
               <div className="absolute w-full">
-                <div className="w-full h-[650px] md:h-[400px] relative">
+                <div className="w-full h-[650px] md:min-h-[650px] relative">
                   <Image
                     src={
                       isDesktop
                         ? "/desktop/image-photography.jpg"
                         : "/mobile/image-photography.jpg"
                     }
-                    alt="header image"
+                    alt="photography image"
                     layout="fill"
+                    objectFit="cover"
                   />
                 </div>
               </div>
@@ -146,7 +149,7 @@ const Home: NextPage = () => {
                       ? "/desktop/image-gallery-milkbottles.jpg"
                       : "/mobile/image-gallery-milkbottles.jpg"
                   }
-                  alt="header image"
+                  alt="milk bottles image"
                   width={100}
                   height={100}
                   layout="responsive"
@@ -159,7 +162,7 @@ const Home: NextPage = () => {
                       ? "/desktop/image-gallery-orange.jpg"
                       : "/mobile/image-gallery-orange.jpg"
                   }
-                  alt="header image"
+                  alt="orange image"
                   width={100}
                   height={100}
                   layout="responsive"
@@ -174,7 +177,7 @@ const Home: NextPage = () => {
                       ? "/desktop/image-gallery-cone.jpg"
                       : "/mobile/image-gallery-cone.jpg"
                   }
-                  alt="header image"
+                  alt="cone image"
                   width={100}
                   height={100}
                   layout="responsive"
@@ -187,7 +190,7 @@ const Home: NextPage = () => {
                       ? "/desktop/image-gallery-sugar-cubes.jpg"
                       : "/mobile/image-gallery-sugar-cubes.jpg"
                   }
-                  alt="header image"
+                  alt="sugar cubes image"
                   width={100}
                   height={100}
                   layout="responsive"
