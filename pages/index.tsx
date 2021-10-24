@@ -199,7 +199,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="bg-dark-moderate-cyan h-72 flex flex-col justify-center text-center">
-            <h1 className="lowercase font-barlow font-black text-4xl text-dark-desaturated-cyan">
+            <h1 className="lowercase font-fraunces font-black text-4xl text-dark-desaturated-cyan">
               Sunnyside
             </h1>
             <div className="flex flex-row m-6 my-8 justify-center text-dark-desaturated-cyan">
