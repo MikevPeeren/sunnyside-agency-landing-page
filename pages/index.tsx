@@ -24,9 +24,9 @@ const Home: NextPage = () => {
         <div className="flex flex-col h-vh h-vw overflow-hidden">
           <div className="relative">
             <NavBar />
-            <div className="w-full relative h-[500px] md:h-[700px]">
+            <div className="w-full relative h-[500px] md:h-[99vh]">
               <div className="absolute w-full">
-                <div className="w-full h-[500px] md:h-[700px] relative">
+                <div className="w-full h-[500px] md:h-[99vh] relative">
                   <Image
                     src={
                       isDesktop
