@@ -13,13 +13,17 @@ const NavBar = () => {
       <div className="flex items-center">
         {isDesktop ? (
           <div className="flex flex-row justify-between align-middle items-center">
-            <p className="mx-4 text-white text-base font-black">About</p>
-            <p className="mx-4 text-white text-base  font-black">Services</p>
-            <p className="mx-4 text-white text-base  font-black">Projects</p>
-            <div className="mx-4 py-2 px-4 bg-white rounded-2xl">
-              <p className="text-very-dark-desaturated-blue text-base font-black">
-                Contact
-              </p>
+            <p className="mx-4 text-white text-base font-black hover:cursor-pointer">
+              About
+            </p>
+            <p className="mx-4 text-white text-base  font-black hover:cursor-pointer">
+              Services
+            </p>
+            <p className="mx-4 text-white text-base  font-black hover:cursor-pointer">
+              Projects
+            </p>
+            <div className="mx-4 py-3 px-6 bg-white rounded-full text-very-dark-desaturated-blue hover:cursor-pointer hover:bg-opacity-30 hover:text-white transition ease-in-out duration-700">
+              <p className="text-base font-black ">Contact</p>
             </div>
           </div>
         ) : (
