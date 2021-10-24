@@ -3,7 +3,7 @@ import Image from "next/image";
 const Testimonials = () => {
   return (
     <div className="flex flex-col justify-center text-center md:my-20">
-      <h1 className="my-6 mt-14 md:mt-10 tracking-widest text-gray-blue font-black font-fraunces">
+      <h1 className="my-10 mt-14 md:mt-10 tracking-widest text-gray-blue font-black font-fraunces">
         CLIENT TESTIMONIALS
       </h1>
       <div className="flex flex-col md:flex-row md:mx-8">
@@ -21,7 +21,7 @@ const Testimonials = () => {
             needs were met and deadlines were always hit.
           </p>
           <footer className="flex flex-col my-4">
-            <span className="font-black font-fraunces my-2">Emily R.</span>
+            <span className="font-black font-barlow my-2">Emily R.</span>
             <span className="font-barlow text-xs text-dark-gray-blue">
               Marketing Director
             </span>

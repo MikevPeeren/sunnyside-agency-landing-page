@@ -3,7 +3,7 @@ import Image from "next/image";
 const NavBar = () => {
   return (
     <div className="flex flex-row justify-between px-4 pt-6  absolute z-10 w-full">
-      <h1 className="text-white lowercase font-fraunces font-black text-4xl">
+      <h1 className="text-white lowercase font-fraunces font-black text-base md:text-4xl">
         Sunnyside
       </h1>
       <div className="flex items-center">
