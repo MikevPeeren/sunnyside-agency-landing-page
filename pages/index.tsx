@@ -40,7 +40,7 @@ const Home: NextPage = () => {
               </div>
               <div className="absolute left-1/2 top-28 w-full -translate-x-1/2 text-center">
                 <div className="flex flex-col justify-between">
-                  <h1 className="font-fraunces font-black text-4xl text-white uppercase tracking-wider">
+                  <h1 className="font-fraunces font-black text-5xl text-white uppercase tracking-wider">
                     We are creatives
                   </h1>
                   <div className="w-full my-8">
