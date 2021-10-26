@@ -16,3 +16,19 @@
   border-right: 0px solid transparent;
   border-bottom-color: #ffffff;
 }
+
+.fadein {
+  opacity: 1;
+  transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+}
+
+.fadeout {
+  opacity: 0;
+  transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+}

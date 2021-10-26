@@ -30,7 +30,9 @@ const NavBarExpanded = ({ handleClick, isOpen }: INavBarExpanded) => {
   return (
     <div
       ref={wrapperRef}
-      className={`${styles.NavBarExpanded} w-[90%] md:w-[95%] bg-white h-[300px] absolute z-50 left-1/2 top-16 md:top-20 -translate-x-1/2 text-center flex flex-col justify-center items-center px-4 transition duration-700 ease-in-out transform`}
+      className={`${styles.NavBarExpanded} ${
+        isOpen ? styles.fadein : styles.fadeout
+      } w-[90%] md:w-[95%] bg-white h-[300px] absolute z-50 left-1/2 top-16 md:top-20 -translate-x-1/2 text-center flex flex-col justify-center items-center px-4`}
     >
       <span className="my-2 text-gray-blue text-base font-medium hover:cursor-pointer">
         About

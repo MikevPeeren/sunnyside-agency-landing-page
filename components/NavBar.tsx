@@ -4,7 +4,6 @@ import useMediaQuery from "../utils/hooks/useMediaQuery";
 
 interface INavbar {
   handleClick: Function;
-  isOpen: boolean;
 }
 
 const NavBar = ({ handleClick }: INavbar) => {

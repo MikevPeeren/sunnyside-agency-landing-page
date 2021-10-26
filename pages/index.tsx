@@ -20,6 +20,8 @@ const Home: NextPage = () => {
     setIsOpen(!isOpen);
   };
 
+  console.log(isOpen);
+
   return (
     <div>
       <Head>
@@ -31,10 +33,8 @@ const Home: NextPage = () => {
       <main>
         <div className="flex flex-col h-vh h-vw overflow-hidden">
           <div className="relative">
-            <NavBar handleClick={handleClick} isOpen={isOpen} />
-            {isOpen && (
-              <NavBarExpanded handleClick={handleClick} isOpen={isOpen} />
-            )}
+            <NavBar handleClick={handleClick} />
+            <NavBarExpanded handleClick={handleClick} isOpen={isOpen} />
 
             <div className="w-full relative h-[500px] md:h-[99vh]">
               <div className="absolute w-full">
