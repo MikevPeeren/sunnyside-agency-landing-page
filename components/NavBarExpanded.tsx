@@ -1,13 +1,14 @@
-import React, { useRef, useEffect, MouseEvent } from "react";
+import React, { useRef, useEffect, MouseEvent, useState } from "react";
 
 import styles from "./NavBarExpanded.module.scss";
 
 interface INavBarExpanded {
-  handleClick: () => void;
   isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const NavBarExpanded = ({ handleClick, isOpen }: INavBarExpanded) => {
+const NavBarExpanded = ({ isOpen, setIsOpen }: INavBarExpanded) => {
+  const [visible, setVisible] = useState(false);
   const wrapperRef = useRef(null);
 
   useEffect(() => {
@@ -17,7 +18,7 @@ const NavBarExpanded = ({ handleClick, isOpen }: INavBarExpanded) => {
         //@ts-ignore
         if (event?.target?.id === "hamburger-menu") return;
         //@ts-ignore
-        else handleClick(event);
+        else setIsOpen(false);
       }
     }
 
@@ -29,11 +30,15 @@ const NavBarExpanded = ({ handleClick, isOpen }: INavBarExpanded) => {
     };
   }, [wrapperRef]);
 
+  useEffect(() => {
+    setVisible(isOpen);
+  }, [isOpen]);
+
   return (
     <div
       ref={wrapperRef}
       className={`${styles.NavBarExpanded} ${
-        isOpen ? styles.fadein : styles.fadeout
+        visible ? styles.fadein : styles.fadeout
       } w-[90%] md:w-[95%] bg-white h-[300px] absolute z-50 left-1/2 top-16 md:top-20 -translate-x-1/2 text-center flex flex-col justify-center items-center px-4`}
     >
       <span className="my-2 text-gray-blue text-base font-medium hover:cursor-pointer">

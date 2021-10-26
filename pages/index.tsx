@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import TextBlock from "../components/TextBlock";
 import Testimonials from "../components/Testimonials";
@@ -20,7 +20,9 @@ const Home: NextPage = () => {
     setIsOpen(!isOpen);
   };
 
-  console.log(isOpen);
+  useEffect(() => {
+    if (isDesktop) setIsOpen(false);
+  }, [isDesktop]);
 
   return (
     <div>
@@ -34,7 +36,7 @@ const Home: NextPage = () => {
         <div className="flex flex-col h-vh h-vw overflow-hidden">
           <div className="relative">
             <NavBar handleClick={handleClick} />
-            <NavBarExpanded handleClick={handleClick} isOpen={isOpen} />
+            <NavBarExpanded isOpen={isOpen} setIsOpen={setIsOpen} />
             <div className="w-full relative h-[500px] md:h-[99vh]">
               <div className="absolute w-full">
                 <div className="w-full h-[500px] md:h-[99vh] relative">
