@@ -31,8 +31,11 @@ const Home: NextPage = () => {
       <main>
         <div className="flex flex-col h-vh h-vw overflow-hidden">
           <div className="relative">
-            <NavBar handleClick={handleClick} />
-            {isOpen && <NavBarExpanded handleClick={handleClick} />}
+            <NavBar handleClick={handleClick} isOpen={isOpen} />
+            {isOpen && (
+              <NavBarExpanded handleClick={handleClick} isOpen={isOpen} />
+            )}
+
             <div className="w-full relative h-[500px] md:h-[99vh]">
               <div className="absolute w-full">
                 <div className="w-full h-[500px] md:h-[99vh] relative">

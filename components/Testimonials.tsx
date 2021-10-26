@@ -11,7 +11,7 @@ const Testimonials = () => {
           <Image
             className="rounded-full"
             src="/image-emily.jpg"
-            alt="header image"
+            alt="image emily"
             width={50}
             height={50}
             layout="fixed"
@@ -31,7 +31,7 @@ const Testimonials = () => {
           <Image
             className="rounded-full"
             src="/image-thomas.jpg"
-            alt="header image"
+            alt="thomas image"
             width={50}
             height={50}
             layout="fixed"
@@ -51,7 +51,7 @@ const Testimonials = () => {
           <Image
             className="rounded-full my-4"
             src="/image-jennie.jpg"
-            alt="header image"
+            alt="image jennie"
             width={50}
             height={50}
             layout="fixed"

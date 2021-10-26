@@ -4,16 +4,19 @@ import styles from "./NavBarExpanded.module.scss";
 
 interface INavBarExpanded {
   handleClick: Function;
+  isOpen: boolean;
 }
 
-const NavBarExpanded = ({ handleClick }: INavBarExpanded) => {
+const NavBarExpanded = ({ handleClick, isOpen }: INavBarExpanded) => {
   const wrapperRef = useRef(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent | TouchEvent) {
-    //@ts-ignore
-      if (wrapperRef?.current && !wrapperRef?.current?.contains(event.target))
-        handleClick();
+      //@ts-ignore
+      if (wrapperRef?.current && !wrapperRef?.current?.contains(event.target)) {
+        if (event?.target?.id === "hamburger-menu") return;
+        else handleClick();
+      }
     }
 
     //@ts-ignore

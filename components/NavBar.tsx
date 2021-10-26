@@ -4,6 +4,7 @@ import useMediaQuery from "../utils/hooks/useMediaQuery";
 
 interface INavbar {
   handleClick: Function;
+  isOpen: boolean;
 }
 
 const NavBar = ({ handleClick }: INavbar) => {
@@ -33,8 +34,9 @@ const NavBar = ({ handleClick }: INavbar) => {
         ) : (
           <div onClick={handleClick}>
             <Image
+              id="hamburger-menu"
               src="/icon-hamburger.svg"
-              alt="facebook"
+              alt="hamburger"
               width={24}
               height={18}
               layout="fixed"
