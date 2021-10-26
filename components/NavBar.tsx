@@ -17,17 +17,17 @@ const NavBar = ({ handleClick }: INavbar) => {
       <div className="flex items-center">
         {isDesktop ? (
           <div className="flex flex-row justify-between align-middle items-center">
-            <span className="mx-4 text-white text-base font-black hover:cursor-pointer">
+            <span className="mx-4 text-white text-base font-black font-barlow hover:cursor-pointer">
               About
             </span>
-            <span className="mx-4 text-white text-base font-black hover:cursor-pointer">
+            <span className="mx-4 text-white text-base font-black font-barlow  hover:cursor-pointer">
               Services
             </span>
-            <span className="mx-4 text-white text-base font-black hover:cursor-pointer">
+            <span className="mx-4 text-white text-base font-black font-barlow  hover:cursor-pointer">
               Projects
             </span>
             <div className="mx-4 py-3 px-6 bg-white rounded-full text-very-dark-desaturated-blue hover:cursor-pointer hover:bg-opacity-30 hover:text-white transition ease-in-out duration-700">
-              <span className="text-base font-black ">Contact</span>
+              <span className="text-base font-black font-barlow ">Contact</span>
             </div>
           </div>
         ) : (
