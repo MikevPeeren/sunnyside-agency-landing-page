@@ -2,15 +2,23 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
+import { useState, useRef, useEffect } from "react";
+
 import TextBlock from "../components/TextBlock";
 import Testimonials from "../components/Testimonials";
 import ImageText from "../components/ImageText";
 import NavBar from "../components/NavBar";
 
 import useMediaQuery from "../utils/hooks/useMediaQuery";
+import NavBarExpanded from "../components/NavBarExpanded";
 
 const Home: NextPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 960px)");
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div>
@@ -23,7 +31,8 @@ const Home: NextPage = () => {
       <main>
         <div className="flex flex-col h-vh h-vw overflow-hidden">
           <div className="relative">
-            <NavBar />
+            <NavBar handleClick={handleClick} />
+            {isOpen && <NavBarExpanded handleClick={handleClick} />}
             <div className="w-full relative h-[500px] md:h-[99vh]">
               <div className="absolute w-full">
                 <div className="w-full h-[500px] md:h-[99vh] relative">
@@ -40,7 +49,7 @@ const Home: NextPage = () => {
               </div>
               <div className="absolute left-1/2 top-28 w-full -translate-x-1/2 text-center">
                 <div className="flex flex-col justify-between">
-                  <h1 className="font-fraunces font-black text-5xl text-white uppercase tracking-wider">
+                  <h1 className="font-fraunces font-black text-4xl md:text-5xl text-white uppercase tracking-wider">
                     We are creatives
                   </h1>
                   <div className="w-full my-8">
@@ -198,7 +207,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="bg-dark-moderate-cyan h-72 flex flex-col justify-center text-center">
+          <div className="bg-[#90d4c5] h-72 flex flex-col justify-center text-center">
             <h1 className="lowercase font-fraunces font-black text-4xl text-dark-desaturated-cyan">
               Sunnyside
             </h1>
