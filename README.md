@@ -25,6 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
+![desktop-design](https://user-images.githubusercontent.com/15649037/138935837-a6c882ba-86bd-487c-a0af-228d8b710abd.jpg)
+
 ### Links
 
 - Solution URL: [Solution](https://sunnyside-agency-landing-page-three-blue.vercel.app/)
