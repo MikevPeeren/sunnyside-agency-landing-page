@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://sunnyside-agency-landing-page-three-blue.vercel.app/)
-- Live Site URL: [Website](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/sunny-side-up-with-nextjsreacttailwindcss-sQLVUuyfx)
+- Live Site URL: [Website](https://sunnyside-agency-landing-page-three-blue.vercel.app/)
 
 ## My process
 
