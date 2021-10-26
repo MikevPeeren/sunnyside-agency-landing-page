@@ -48,6 +48,9 @@ const Home: NextPage = () => {
                     }
                     alt="header image"
                     layout="fill"
+                    priority
+                    placeholder="blur"
+                    blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
                   />
                 </div>
               </div>
@@ -63,6 +66,9 @@ const Home: NextPage = () => {
                       width={36}
                       height={114}
                       layout="fixed"
+                      priority
+                      placeholder="blur"
+                      blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
                     />
                   </div>
                 </div>
@@ -80,6 +86,9 @@ const Home: NextPage = () => {
                 alt="egg image"
                 layout="fill"
                 objectFit="cover"
+                priority
+                placeholder="blur"
+                blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
               />
             </div>
             <TextBlock
@@ -99,6 +108,9 @@ const Home: NextPage = () => {
                 }
                 alt="stand out image"
                 layout="fill"
+                priority
+                placeholder="blur"
+                blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
               />
             </div>
             <TextBlock
@@ -121,6 +133,9 @@ const Home: NextPage = () => {
                     alt="graphic design image"
                     layout="fill"
                     objectFit="cover"
+                    priority
+                    placeholder="blur"
+                    blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
                   />
                 </div>
               </div>
@@ -142,6 +157,9 @@ const Home: NextPage = () => {
                     alt="photography image"
                     layout="fill"
                     objectFit="cover"
+                    priority
+                    placeholder="blur"
+                    blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
                   />
                 </div>
               </div>
@@ -179,6 +197,9 @@ const Home: NextPage = () => {
                   width={100}
                   height={100}
                   layout="responsive"
+                  priority
+                  placeholder="blur"
+                  blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
                 />
               </div>
             </div>
@@ -194,6 +215,9 @@ const Home: NextPage = () => {
                   width={100}
                   height={100}
                   layout="responsive"
+                  priority
+                  placeholder="blur"
+                  blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
                 />
               </div>
               <div className="w-2/4">
@@ -207,6 +231,9 @@ const Home: NextPage = () => {
                   width={100}
                   height={100}
                   layout="responsive"
+                  priority
+                  placeholder="blur"
+                  blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
                 />
               </div>
             </div>

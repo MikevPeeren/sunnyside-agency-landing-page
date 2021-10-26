@@ -15,6 +15,9 @@ const Testimonials = () => {
             width={50}
             height={50}
             layout="fixed"
+            priority
+            placeholder="blur"
+            blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
           />
           <p className="my-6 font-barlow text-very-dark-desaturated-blue">
             We put our trust in Sunnyside and they delivered, making sure our
@@ -35,6 +38,9 @@ const Testimonials = () => {
             width={50}
             height={50}
             layout="fixed"
+            priority
+            placeholder="blur"
+            blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
           />
           <p className="my-6 font-barlow text-very-dark-desaturated-blue">
             Sunnyside&apos;s enthusiasm coupled with their keen interest in our
@@ -55,6 +61,9 @@ const Testimonials = () => {
             width={50}
             height={50}
             layout="fixed"
+            priority
+            placeholder="blur"
+            blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
           />
           <p className="my-6 font-barlow text-very-dark-desaturated-blue">
             Incredible end result! Our sales increased over 400% when we worked
