@@ -184,6 +184,9 @@ const Home: NextPage = () => {
                   width={100}
                   height={100}
                   layout="responsive"
+                  priority
+                  placeholder="blur"
+                  blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
                 />
               </div>
               <div className="w-2/4">
