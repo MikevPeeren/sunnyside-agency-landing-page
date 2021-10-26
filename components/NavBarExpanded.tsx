@@ -3,7 +3,7 @@ import React, { useRef, useEffect, MouseEvent } from "react";
 import styles from "./NavBarExpanded.module.scss";
 
 interface INavBarExpanded {
-  handleClick: Function;
+  handleClick: () => void;
   isOpen: boolean;
 }
 
@@ -14,8 +14,10 @@ const NavBarExpanded = ({ handleClick, isOpen }: INavBarExpanded) => {
     function handleClickOutside(event: MouseEvent | TouchEvent) {
       //@ts-ignore
       if (wrapperRef?.current && !wrapperRef?.current?.contains(event.target)) {
+        //@ts-ignore
         if (event?.target?.id === "hamburger-menu") return;
-        else handleClick();
+        //@ts-ignore
+        else handleClick(event);
       }
     }
 

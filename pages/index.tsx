@@ -35,7 +35,6 @@ const Home: NextPage = () => {
           <div className="relative">
             <NavBar handleClick={handleClick} />
             <NavBarExpanded handleClick={handleClick} isOpen={isOpen} />
-
             <div className="w-full relative h-[500px] md:h-[99vh]">
               <div className="absolute w-full">
                 <div className="w-full h-[500px] md:h-[99vh] relative">

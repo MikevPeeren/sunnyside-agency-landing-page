@@ -3,7 +3,7 @@ import Image from "next/image";
 import useMediaQuery from "../utils/hooks/useMediaQuery";
 
 interface INavbar {
-  handleClick: Function;
+  handleClick: () => void;
 }
 
 const NavBar = ({ handleClick }: INavbar) => {
