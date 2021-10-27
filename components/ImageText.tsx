@@ -11,7 +11,9 @@ const ImageText = ({ title, content, color }: IImageText) => {
         <h1 className={`font-fraunces font-black text-4xl md:text-xl ${color}`}>
           {title}
         </h1>
-        <p className={`m-6 text-sm md:text-xs font-barlow ${color} md:w-3/4`}>
+        <p
+          className={`m-6 text-sm md:text-xs font-barlow font-black ${color} md:w-3/4`}
+        >
           {content}
         </p>
       </div>
