@@ -241,7 +241,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#90d4c5] h-[340px] flex flex-col justify-center text-center">
+          <div className="bg-[#90d4c5] h-[345px] flex flex-col justify-center text-center">
             <h1 className="lowercase font-fraunces font-black text-4xl text-dark-desaturated-cyan">
               Sunnyside
             </h1>
