@@ -1,46 +1,74 @@
+import { useState, useEffect } from "react";
+
 import Image from "next/image";
 
 import useMediaQuery from "../utils/hooks/useMediaQuery";
 
 interface INavbar {
   handleClick: () => void;
+  isOpen: boolean;
 }
 
-const NavBar = ({ handleClick }: INavbar) => {
+const NavBar = ({ handleClick, isOpen }: INavbar) => {
+  const [ariaExpanded, setAriaExpanded] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 960px)");
+
+  useEffect(() => {
+    setAriaExpanded(isOpen);
+  }, [isOpen]);
+
+  const triggerClick = () => {
+    setAriaExpanded(true);
+    handleClick();
+  };
 
   return (
     <div className="flex flex-row justify-between items-center px-4 py-4 w-full bg-[#3dbffe] fixed top-0 z-10">
-      <h1 className="text-white lowercase font-fraunces font-black text-base md:text-4xl">
-        Sunnyside
-      </h1>
+      <Image src="/logo.svg" alt="" width={124} height={24} layout="fixed" />
       <div className="flex items-center">
         {isDesktop ? (
-          <div className="flex flex-row justify-between align-middle items-center">
-            <span className="mx-4 text-white text-base font-black font-barlow hover:cursor-pointer">
+          <nav className="flex flex-row justify-between align-middle items-center">
+            <a
+              className="mx-4 text-white text-base font-black font-barlow hover:cursor-pointer"
+              href="#"
+            >
               About
-            </span>
-            <span className="mx-4 text-white text-base font-black font-barlow  hover:cursor-pointer">
+            </a>
+            <a
+              className="mx-4 text-white text-base font-black font-barlow hover:cursor-pointer"
+              href="#"
+            >
               Services
-            </span>
-            <span className="mx-4 text-white text-base font-black font-barlow  hover:cursor-pointer">
+            </a>
+            <a
+              className="mx-4 text-white text-base font-black font-barlow hover:cursor-pointer"
+              href="#"
+            >
               Projects
-            </span>
+            </a>
             <div className="mx-4 py-3 px-6 bg-white rounded-full text-very-dark-desaturated-blue hover:cursor-pointer hover:bg-opacity-30 hover:text-white transition ease-in-out duration-700">
-              <span className="text-base font-black font-barlow ">Contact</span>
+              <a className="text-base font-black font-barlow" href="#">
+                Contact
+              </a>
             </div>
-          </div>
+          </nav>
         ) : (
-          <div onClick={handleClick}>
+          <button
+            type="button"
+            aria-label="navigational menu"
+            aria-expanded={ariaExpanded}
+            onClick={triggerClick}
+          >
             <Image
               id="hamburger-menu"
+              aria-hidden="true"
               src="/icon-hamburger.svg"
-              alt="hamburger"
+              alt="dropdown menu"
               width={24}
               height={18}
               layout="fixed"
             />
-          </div>
+          </button>
         )}
       </div>
     </div>

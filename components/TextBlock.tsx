@@ -18,11 +18,12 @@ const TextBlock = ({ header, content, footer, footerColor }: ITextBlock) => {
       <p className="p-4 md:pl-20 font-barlow text-very-dark-gray-blue font-semibold text-base md:text-sm md:w-3/4 2xl:w-2/4">
         {content}
       </p>
-      <span
+      <a
         className={footerColor === "yellow" ? yellowClassNames : redClassNames}
+        href="#"
       >
         {footer}
-      </span>
+      </a>
     </section>
   );
 };

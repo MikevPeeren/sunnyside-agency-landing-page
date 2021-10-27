@@ -11,7 +11,7 @@ const Testimonials = () => {
           <Image
             className="rounded-full"
             src="/image-emily.jpg"
-            alt="image emily"
+            alt="profile picture of emily"
             width={50}
             height={50}
             layout="fixed"
@@ -19,10 +19,10 @@ const Testimonials = () => {
             placeholder="blur"
             blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
           />
-          <p className="my-6 font-barlow text-very-dark-desaturated-blue">
+          <blockquote className="my-6 font-barlow text-very-dark-desaturated-blue">
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
-          </p>
+          </blockquote>
           <footer className="flex flex-col my-4">
             <span className="font-black font-barlow my-2">Emily R.</span>
             <span className="font-barlow text-xs text-dark-gray-blue">
@@ -34,7 +34,7 @@ const Testimonials = () => {
           <Image
             className="rounded-full"
             src="/image-thomas.jpg"
-            alt="thomas image"
+            alt="profile picture of thomas"
             width={50}
             height={50}
             layout="fixed"
@@ -42,10 +42,10 @@ const Testimonials = () => {
             placeholder="blur"
             blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
           />
-          <p className="my-6 font-barlow text-very-dark-desaturated-blue">
+          <blockquote className="my-6 font-barlow text-very-dark-desaturated-blue">
             Sunnyside&apos;s enthusiasm coupled with their keen interest in our
             brand&apos;s success made it a satisfying and enjoyable experience.
-          </p>
+          </blockquote>
           <footer className="flex flex-col my-4">
             <span className="font-black font-barlow my-2">Thomas S.</span>
             <span className="font-barlow text-xs text-dark-gray-blue">
@@ -57,7 +57,7 @@ const Testimonials = () => {
           <Image
             className="rounded-full my-4"
             src="/image-jennie.jpg"
-            alt="image jennie"
+            alt="profile picture of jennie"
             width={50}
             height={50}
             layout="fixed"
@@ -65,10 +65,10 @@ const Testimonials = () => {
             placeholder="blur"
             blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOUFJOsBwABYQDJy8FxnwAAAABJRU5ErkJggg=="
           />
-          <p className="my-6 font-barlow text-very-dark-desaturated-blue">
+          <blockquote className="my-6 font-barlow text-very-dark-desaturated-blue">
             Incredible end result! Our sales increased over 400% when we worked
             with Sunnyside. Highly recommended!
-          </p>
+          </blockquote>
           <footer className="flex flex-col my-4">
             <span className="font-black font-barlow my-2">Jennie F.</span>
             <span className="font-barlow text-xs text-dark-gray-blue">
