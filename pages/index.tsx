@@ -117,7 +117,7 @@ const Home: NextPage = () => {
             <TextBlock
               header="Stand out to the right audience"
               content="Using a collaborative formula of designers, researchers, photographers, videographers and copywriters, we'll build and extend your brand in digital places."
-              footer=""
+              footer="Learn More"
               footerColor="soft-red"
             />
           </div>
