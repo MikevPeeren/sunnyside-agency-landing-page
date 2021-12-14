@@ -1,7 +1,5 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -20,11 +18,6 @@ module.exports = {
         barlow: ["Barlow", "sans-serif"],
         fraunces: ["Fraunces", "serif"],
       },
-    },
-  },
-  variants: {
-    extend: {
-      fill: ["hover", "focus"],
     },
   },
   plugins: [],
