@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ReactElement } from "react";
 
